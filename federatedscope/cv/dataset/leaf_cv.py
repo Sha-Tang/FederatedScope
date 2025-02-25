@@ -87,7 +87,7 @@ class LEAF_CV(LEAF):
 
         os.makedirs(self.raw_dir, exist_ok=True)
         for name in self.raw_file_names:
-            download_url(osp.join(url, name), self.raw_dir)
+            download_url((url+"/"+name), self.raw_dir)
 
     def __getitem__(self, index):
         """

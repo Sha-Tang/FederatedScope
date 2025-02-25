@@ -32,3 +32,6 @@ trainer:
 eval:
   freq: 10
   metrics: ['acc', 'correct']
+wandb:
+  use: False
+  online_track: False
